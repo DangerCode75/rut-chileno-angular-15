@@ -11,6 +11,14 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "ngx-rut-chileno": [
+        "dist/ngx-rut-chileno"
+      ],
+      "rut": [
+        "dist/rut"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,

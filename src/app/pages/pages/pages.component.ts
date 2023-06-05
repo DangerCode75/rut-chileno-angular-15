@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import {
   FormBuilder,
   FormControl,
@@ -13,17 +14,17 @@ export class Customer {
 }
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-pages',
+  templateUrl: './pages.component.html',
+  styleUrls: ['./pages.component.css'],
 })
-export class AppComponent implements OnInit {
+export class PagesComponent implements OnInit {
   formValid!: string;
   form!: FormGroup;
   customer = new Customer();
-  title = 'app-rut-chileno';
 
   constructor(private fb: FormBuilder, private rutService: RutService) {}
+
   ngOnInit() {
     this.form = new FormGroup({
       firstName: new FormControl(),
